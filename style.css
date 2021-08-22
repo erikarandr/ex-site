@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    color:whitesmoke; 
+}
+ul {
+    list-style: none;
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+body {
+    background-image: url(./imagens/depositphotos_85558648-stock-photo-abstract-monochrome-background.jpg); 
+    background-size:cover;
+    font-family: 'Poppins', sans-serif;
+    
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 10px ridge whitesmoke;
+    margin-bottom: 45px;
+}
+ 
+header ul {
+    display:flex;
+}
+header ul li {
+    padding: 5px;
+    border-bottom: 1px dashe whitesmoke;
+}
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+   color: whitesmoke;
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+}
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 20px;
+}
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+.rotate{
+transform: rotate(180deg);
+transition: 300ms;
+}
+.active {
+    display:block!important;
+}
+
+#about p {
+max-width: 600px;
+margin: 0 auto;
+
+}
+.form {
+width:40%;
+margin:0 auto;
+margin-top: 30px;
+}
+.form input{
+    width: 20%;
+    border-bottom: 1px whitesmoke;
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;
+
+}
+.form button{
+    width: 5%;
+    color:black;
+    background-color: darkslategray;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-weight: 600;
+    border:none;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+   margin-top: 20px;
+    margin-left: -4px;
+
+}
+.form button:hover {
+    background-color: dimgray;
+    color: rgb(153, 135, 135);
+
+}
